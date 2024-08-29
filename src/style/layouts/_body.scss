@@ -1,0 +1,68 @@
+@import '../utils/mixin';
+@import '../utils/variables';
+@import '../base/font';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $cream;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @include mobile-down {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+h2 {
+    font-family: 'Sono';
+    font-weight: 100;
+    font-size: 45px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    color: $green;
+
+    @include tablet-down {
+        font-size: 40px;
+        padding-bottom: 30px;
+        padding-top: 0;
+    }
+
+    @include mobile-down {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+}
+
+.home_wrapper {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/fond.png');
+}
+
+.anchor{
+    display: block;
+    height: 137px;
+    margin-top: -137px;
+    visibility: hidden;
+
+    @include mobile-down {
+        height: 60px;
+        margin-top: -60px;
+    }
+  }
+
+  .about_wrapper,
+  .projets_wrapper,
+  .skills_wrapper,
+  .contact_wrapper  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}

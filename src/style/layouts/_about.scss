@@ -1,0 +1,50 @@
+.aboutDetails_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    gap: 100px;
+
+    @include tablet-down {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+    @include mobile-down {
+        flex-direction: row;
+        gap: 20px;
+        padding-top: 0;
+    }
+}
+
+.about_picture {
+    width: 25%;
+    border-radius: 50%;
+
+    @include tablet-down {
+        width: 37%;
+    }
+}
+
+.about_description {
+    font-family: 'Karla';
+    font-weight: 300;
+    font-size: 27px;
+    color: $textColor;
+    width: 45%;
+
+    @include tablet-down {
+        width: 90%;
+        text-align: center;
+    }
+
+    @include mobile-down {
+        width: 50%;
+        font-size: 9px;
+        text-align: center;
+    }
+}

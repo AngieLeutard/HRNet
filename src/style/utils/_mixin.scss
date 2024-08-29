@@ -1,0 +1,37 @@
+// -- Media Queries mixins
+
+@mixin mobile-down {
+    @media #{$screen-xs-max} {
+      @content;
+    }
+  }
+  
+  @mixin mobile-up {
+    @media #{$screen-sm-min} {
+      @content;
+    }
+  }
+  
+  @mixin tablet-down {
+    @media #{$screen-sm-max} {
+      @content;
+    }
+  }
+  
+  @mixin tablet-up {
+    @media #{$screen-md-min} {
+      @content;
+    }
+  }
+  
+  @mixin desktop-down {
+    @media #{$screen-md-max} {
+      @content;
+    }
+  }
+  
+  @mixin desktop-up {
+    @media #{$screen-lg-min} {
+      @content;
+    }
+  }

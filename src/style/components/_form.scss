@@ -1,0 +1,48 @@
+.form_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 10px;
+}
+
+.form_label {
+    font-family: "Karla";
+    font-size: 20px;
+    color: #000;
+}
+
+.form_input {
+    border: solid 1px $green;
+    height: 30px;
+    border-radius: 3px;
+    font-family: "Karla";
+    margin-bottom: 25px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 22px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: $green;
+    margin-bottom: 25px;
+}
+
+.form_button {
+    width: 50%;
+    border: solid 1px $green;
+    height: 30px;
+    border-radius: 3px;
+    font-family: "Karla";
+    background-color: #ffffff;
+    font-size: 18px;
+    margin-left: 25%;
+}

@@ -1,0 +1,101 @@
+.footer_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-position: center;
+    z-index: 0;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($color: $cream, $alpha: 0.5);
+        z-index: 1;
+    }
+
+    @include mobile-down {
+        height: 150px;
+    }
+}
+
+.footer_text {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Karla';
+    color: $black;
+    font-size: 20px;
+    bottom: 15px;
+
+    @include mobile-down {
+        font-size: 9px;
+    }
+}
+
+.footer_logo_wrapper {
+    display: flex;
+    gap: 30px;
+
+    @include mobile-down {
+        gap: 15px;
+    }
+}
+
+.github_link {
+    z-index: 2;
+    transition: all 0.3s;
+
+    @include tablet-down {
+        bottom: 60px;
+        left: 315px;
+    }
+
+    @include mobile-down {
+        bottom: 60px;
+        left: 130px;
+    }
+}
+
+.github_link:hover {
+    transform: scale(1.2);
+}
+
+.githubLogo {
+    width: 56px;
+
+    @include mobile-down {
+        width: 36px;
+    }
+}
+
+.linkedin_link {
+    z-index: 2;
+    transition: all 0.3s;
+
+    @include tablet-down {
+        bottom: 60px;
+        right: 315px;
+    }
+
+    @include mobile-down {
+        bottom: 60px;
+        right: 130px;
+    }
+}
+
+.linkedin_link:hover {
+    transform: scale(1.2);
+}
+
+.linkedinLogo {
+    width: 56px;
+
+    @include mobile-down {
+        width: 36px;
+    }
+}

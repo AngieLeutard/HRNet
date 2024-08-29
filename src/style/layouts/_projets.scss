@@ -1,0 +1,16 @@
+.projetsCards_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+
+    @include tablet-down {
+        gap: 30px;
+    }
+
+    @include mobile-down {
+        gap: 10px;
+    }
+}
