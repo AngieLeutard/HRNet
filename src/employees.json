@@ -1,3 +1,13 @@
 [
-    
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "startDate": "2021-01-01",
+        "department": "Engineering",
+        "dateOfBirth": "1990-02-15",
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10001"
+    }
 ]
