@@ -30,19 +30,19 @@ function Header() {
       
     return (
         <div className='header_wrapper'>
-            <Link className='headerLogo_wrapper' to="/">
+            <Link className='headerLogo_wrapper' to='/'>
                 <h1 className='header_logo'>HRnet</h1>
                 <p className='header_text_logo'>FOR WEALTH HEALTH</p>
             </Link>
             <section className='nav_wrapper'>
                 <nav className='navbar'>
-                    <a className='about nav_link active' href="#about">
+                    <a className='about nav_link active' href='/'>
                         Home
                     </a>
-                    <a className='projets nav_link' href='#projets'>
+                    <a className='projets nav_link' href='creation'>
                         Create Employee
                     </a>
-                    <a className='skills nav_link' href="#skills">
+                    <a className='skills nav_link' href='view'>
                         View current employees
                     </a>
                 </nav>

@@ -25,6 +25,15 @@
     margin-bottom: 25px;
 }
 
+.form_select {
+    border: solid 1px $green;
+    height: 30px;
+    border-radius: 3px;
+    font-family: "Karla";
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
 .address {
     display: flex;
     flex-direction: column;
@@ -37,6 +46,7 @@
 }
 
 .form_button {
+    cursor: pointer;
     width: 50%;
     border: solid 1px $green;
     height: 30px;

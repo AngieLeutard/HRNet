@@ -7,7 +7,6 @@ function Tab() {
             <table className="table_wrapper">
                 <thead>
                     <tr className="col_wrapper">
-                        <th scope="col"></th>
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
                         <th scope="col">Start Date</th>
