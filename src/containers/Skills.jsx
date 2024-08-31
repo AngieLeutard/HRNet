@@ -1,5 +1,5 @@
 import "../index.scss"
-import EmployeeTable from '../components/CurrentEmployees';
+import EnhancedTable from '../components/Tmp';
 
 
 function Skills() {
@@ -7,7 +7,7 @@ function Skills() {
         <div className='skills_wrapper'>
             <h2 className="skills_title">View current employees</h2>
             <section className="currentEmployees_wrapper">
-                <EmployeeTable/>
+                <EnhancedTable/>
             </section>
         </div>
     )

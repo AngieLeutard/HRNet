@@ -5,6 +5,7 @@ import employees from "../employees.json"
 
 
 function EmployeeTable () {
+
     const [searchTerm, setSearchTerm] = useState('');
     const [currentPage, setCurrentPage] = useState(0);
     const itemsPerPage = 10;
@@ -25,6 +26,8 @@ function EmployeeTable () {
         currentPage * itemsPerPage,
         (currentPage + 1) * itemsPerPage
     );
+
+    console.log(employees)
 
     return (
         <div id="employee-div" className="table_container">
