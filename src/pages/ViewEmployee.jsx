@@ -1,13 +1,13 @@
 import "../index.scss"
 
-import Skills from "../containers/Skills";
+import CurrentEmployees from "../containers/CurrentEmployees";
 
 function ViewEmployee() {
 
     return (
       <div className="home_wrapper">
         <section className="projets_section padding_section">
-          <Skills/>
+          <CurrentEmployees/>
         </section>
       </div>
     );
