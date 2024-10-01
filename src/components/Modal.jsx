@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Modal } from 'angie-modale';
-import 'angie-modale/dist/modal.css'; // Importez les styles
+import 'angie-modale/dist/modal.css';
 
-const Modale = () => {
+const SuccessModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
@@ -19,4 +19,4 @@ const Modale = () => {
   );
 };
 
-export default Modale;
+export default SuccessModal;
