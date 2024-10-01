@@ -1,7 +1,6 @@
 import "../index.scss"
 import EmployeesTable from '../components/EmployeesTable';
 
-
 function Skills() {
     return (
         <div className='table_wrapper'>

@@ -165,7 +165,7 @@ export default function EmployeesTable() {
                     hover
                     role="checkbox"
                     tabIndex={-1}
-                    key={row.id} // Assurez-vous que chaque ligne a une clé unique
+                    key={row.id}
                     sx={{ cursor: 'pointer' }}
                   >
                     <TableCell component="th" id={labelId} scope="row" padding="none">{row.firstName}</TableCell>
@@ -180,7 +180,7 @@ export default function EmployeesTable() {
                     <TableCell align="right">
                       <IconButton 
                         aria-label="delete" 
-                        onClick={() => handleDelete(row.id)} // Passez l'id correct à handleDelete
+                        onClick={() => handleDelete(row.id)}
                       >
                         <DeleteIcon />
                       </IconButton>

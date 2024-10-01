@@ -1,5 +1,5 @@
 import "../index.scss"
-import aboutPicture from '../assets/moi.png';
+import aboutPicture from '../assets/moi.webp';
 
 function Skills() {
     return (

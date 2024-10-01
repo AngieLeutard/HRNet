@@ -1,5 +1,4 @@
 import "../index.scss"
-
 import About from '../containers/About'
 import Modal from '../components/Modal'
 

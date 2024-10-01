@@ -1,10 +1,8 @@
 import "../index.scss"
-
 import Form from "../components/Form.jsx"
 
-
 function SectionProjets() {
-
+    
     return (
         <div className='projets_wrapper' id="about">
             <h2 className="projets_title">Create new employee</h2>

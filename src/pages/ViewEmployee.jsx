@@ -1,5 +1,4 @@
 import "../index.scss"
-
 import CurrentEmployees from "../containers/CurrentEmployees";
 
 function ViewEmployee() {

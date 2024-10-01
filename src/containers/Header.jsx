@@ -2,14 +2,13 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 function Header() {
-
   useEffect(() => {
     const sections = document.querySelectorAll("span")
     const navLi = document.querySelectorAll(".nav_link")
-  
+
     window.onscroll = () => {
         var current = "";
-        
+    
         sections.forEach((section) => {
             const y = window.scrollY;
             const sectionTop = section.offsetTop;

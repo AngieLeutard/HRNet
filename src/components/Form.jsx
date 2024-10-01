@@ -4,9 +4,7 @@ import "../index.scss";
 import states from "../states.json";
 import initialEmployees from "../employees.json";
 import BasicDatePicker from "./DatePicker";
-// modal
 import Modal from '../components/Modal'
-
 
 function Form() {
     const [employees, setEmployees] = useState(() => {
@@ -23,9 +21,7 @@ function Form() {
     const [state, setState] = useState(states[0].value);
     const [zipCode, setZipCode] = useState("");
     const [department, setDepartment] = useState("Sales");
-    // modal
     const [isModalOpen, setIsModalOpen] = useState(false); 
-
 
     useEffect(() => {
         localStorage.setItem("employees", JSON.stringify(employees));
@@ -33,7 +29,6 @@ function Form() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
         const newEmployee = {
             id: uuidv4(),
             firstName,
@@ -49,7 +44,6 @@ function Form() {
 
         const updatedEmployees = [...employees, newEmployee];
         setEmployees(updatedEmployees);
-
         setFirstName("");
         setLastName("");
         setDateOfBirth("");
@@ -59,8 +53,6 @@ function Form() {
         setState(states[0].value);
         setZipCode("");
         setDepartment("Sales");
-
-        // Affichage de la modale de confirmation
         setIsModalOpen(true);
     };
 
@@ -75,7 +67,6 @@ function Form() {
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                 />
-
                 <label className="form_label" htmlFor="last-name">Last Name</label>
                 <input
                     className="form_input"
@@ -84,7 +75,6 @@ function Form() {
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                 />
-
                 <label className="form_label" htmlFor="date-of-birth">Date of Birth</label>
                 <BasicDatePicker 
                     label="Basic date picker" 
@@ -94,7 +84,6 @@ function Form() {
                     value={dateOfBirth}
                     onChange={(e) => setDateOfBirth(e.target.value)}
                 />
-
                 <label className="form_label" htmlFor="start-date">Start Date</label>
                 <BasicDatePicker 
                     label="Basic date picker" 
@@ -104,10 +93,8 @@ function Form() {
                     value={startDate}
                     onChange={(e) => setStartDate(e.target.value)}
                 />
-
                 <fieldset className="address">
                     <legend className="form_label">Address</legend>
-
                     <label className="form_label" htmlFor="street">Street</label>
                     <input
                         className="form_input"
@@ -116,7 +103,6 @@ function Form() {
                         value={street}
                         onChange={(e) => setStreet(e.target.value)}
                     />
-
                     <label className="form_label" htmlFor="city">City</label>
                     <input
                         className="form_input"
@@ -125,7 +111,6 @@ function Form() {
                         value={city}
                         onChange={(e) => setCity(e.target.value)}
                     />
-
                     <label className="form_label" htmlFor="state">State</label>
                     <select
                         className="form_select"
@@ -140,7 +125,6 @@ function Form() {
                             </option>
                         ))}
                     </select>
-
                     <label className="form_label" htmlFor="zip-code">Zip Code</label>
                     <input
                         className="form_input"
@@ -150,7 +134,6 @@ function Form() {
                         onChange={(e) => setZipCode(e.target.value)}
                     />
                 </fieldset>
-
                 <label className="form_label" htmlFor="department">Department</label>
                 <select
                     className="form_select"
