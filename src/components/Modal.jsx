@@ -1,22 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Modal } from 'angie-modale';
 import 'angie-modale/dist/modal.css';
 
-const SuccessModal = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
-
+const ConfirmationModal = ({ isOpen, onClose }) => {
   return (
-    <div>
-      <button onClick={openModal}>Ouvrir la Modale</button>
-      <Modal isOpen={isOpen} onClose={closeModal}>
-        <h2>Contenu de la modale</h2>
-        <p>Ceci est une modale réutilisable !</p>
+      <Modal isOpen={isOpen} onClose={onClose}>
+          <div>
+              <h2>Confirmation</h2>
+              <p className='form_label'>Employee added successfully !</p>
+          </div>
       </Modal>
-    </div>
   );
 };
 
-export default SuccessModal;
+export default ConfirmationModal;
