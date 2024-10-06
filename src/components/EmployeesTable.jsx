@@ -112,7 +112,14 @@ export default function EmployeesTable() {
     const filteredRows = employees.filter(employee =>
       employee.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       employee.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      employee.department.toLowerCase().includes(searchTerm.toLowerCase())
+      employee.startDate.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      employee.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      employee.department.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      employee.dateOfBirth.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      employee.street.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      employee.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      employee.state.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      employee.zipCode.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredEmployees(filteredRows);
   };
