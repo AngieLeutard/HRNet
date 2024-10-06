@@ -56,3 +56,14 @@
     font-size: 18px;
     margin-left: 25%;
 }
+
+.error_message {
+    font-family: "Karla";
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+    background-color: #fdd;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
